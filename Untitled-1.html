@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note Taking App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Note Taking App</h1>
+    <div id="auth-container" class="section">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="note-container" class="section" style="display:none;">
+      <textarea id="note-text" placeholder="Write your note here..."></textarea>
+      <button onclick="saveNote()">Save Note</button>
+      <button onclick="logout()">Logout</button>
+      <button id="delete-all" class="delete-all" style="display:none;" onclick="deleteAllNotes()">Delete All Notes</button>
+      <div id="notes-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
